@@ -34,8 +34,8 @@
         "ports": [
           {
             "name": "web",
-            "port": 9080,
-            "targetPort": 9080
+            "port": 8080,
+            "targetPort": 8080
           }
         ],
         "selector": {
@@ -182,7 +182,7 @@
                 "image": " ",
                 "ports": [
                   {
-                    "containerPort": 9080
+                    "containerPort": 8080
                   }
                 ],
                 "readinessProbe": {
@@ -190,7 +190,7 @@
                   "initialDelaySeconds": 3,
                   "httpGet": {
                     "path": "/",
-                    "port": 9080
+                    "port": 8080
                   }
                 },
                 "livenessProbe": {
@@ -198,7 +198,7 @@
                     "initialDelaySeconds": 30,
                     "httpGet": {
                         "path": "/",
-                        "port": 9080
+                        "port": 8080
                     }
                 },
                 "resources": {
@@ -221,7 +221,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "example-apache"
+      "value": "exam-apache"
     },
     {
       "name": "NAMESPACE",
@@ -242,7 +242,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/mclarkson78/example-apache.git"
+      "value": "https://github.com/rgmill/example-apache.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
@@ -258,7 +258,7 @@
       "name": "APPLICATION_DOMAIN",
       "displayName": "Application Hostname",
       "description": "The exposed hostname that will route to the httpd service, if left blank a value will be defaulted.",
-      "value": ""
+      "value": "exam-apache-russell-miller.ose-bootcamp-1612539632-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud"
     },
     {
       "name": "GITHUB_WEBHOOK_SECRET",
