@@ -258,7 +258,7 @@
       "name": "APPLICATION_DOMAIN",
       "displayName": "Application Hostname",
       "description": "The exposed hostname that will route to the httpd service, if left blank a value will be defaulted.",
-      "value": "exam-apache-russell-miller.ose-bootcamp-1612539632-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud"
+      "value": "exam-apache-russell-miller.ose-bootcamp-1612539632-f72ef11f3ab089a8c677044eb28292cd-0000.sjc03.containers.appdomain.cloud/"
     },
     {
       "name": "GITHUB_WEBHOOK_SECRET",
